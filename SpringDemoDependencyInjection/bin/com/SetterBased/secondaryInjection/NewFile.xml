@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			  <bean id="c" class="com.SetterBased.secondaryInjection.Company">
+			    <property name="cid" value="100"></property>
+			    <property name="cname" value="Infy"></property>
+			  </bean>
+			  <bean id="e" class="com.SetterBased.secondaryInjection.Employee">
+			     <property name="eid" value="321"></property>
+			     <property name="ename" value="Pune"></property>
+			     <property name="company" ref="c"></property>
+			  </bean>
+			</beans>

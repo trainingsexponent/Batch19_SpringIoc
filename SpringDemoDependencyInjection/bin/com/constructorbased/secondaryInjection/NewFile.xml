@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			  <bean id="b" class="com.constructorbased.secondaryInjection.Book">
+			    <constructor-arg value="1234"></constructor-arg>
+			    <constructor-arg value="Who I am ?"></constructor-arg>
+			  </bean>
+			  <bean id="l" class="com.constructorbased.secondaryInjection.Library">
+			     <constructor-arg value="54321"></constructor-arg>
+			     <constructor-arg value="Anonymous"></constructor-arg>
+			     <constructor-arg ref="b"></constructor-arg>
+			  </bean>
+			</beans>

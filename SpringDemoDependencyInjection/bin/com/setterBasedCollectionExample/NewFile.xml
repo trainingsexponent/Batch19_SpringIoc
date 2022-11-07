@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			
+			  <bean id="a" class="com.setterBasedCollectionExample.Amazon">
+			    <property name="aid" value="123"/>
+			    <property name="shopName" value="AmazonPune"></property>
+			    <property name="cloths">
+			      <list>
+			        <value>Shirt</value>
+			        <value>Jeans</value>
+			        <value>T-Shirts</value>
+			      </list>
+			    </property>
+			    <property name="mobile">
+			       <set>
+			         <value>Apple</value>
+			         <value>Samsung</value>
+			       </set>
+			    </property>
+			    <property name="map">
+			       <map>
+			         <entry key="1" value="Half Blood Prince"></entry>
+			         <entry key="2" value="Paras Pather"></entry>
+			       </map>  
+			    </property>
+			  </bean>
+			
+			</beans>
