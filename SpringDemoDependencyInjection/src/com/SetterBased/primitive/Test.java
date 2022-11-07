@@ -10,6 +10,7 @@ public class Test {
 		ApplicationContext apc = new ClassPathXmlApplicationContext("com/SetterBased/primitive/NewFile.xml");
 		
 		Student student = apc.getBean("s",Student.class);
+
 		System.out.println(student);
 	}
 }
