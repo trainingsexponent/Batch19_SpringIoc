@@ -9,6 +9,8 @@ logs/
 #For remove .mvn file from our project
 .mvn
 mvnw.*
+*.bin
+*.class
 *.zip
 .metadata
 ### STS ###
