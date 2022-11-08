@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+  <bean id="s" class="com.example.Student" scope="singleton">
+    <property name="sid" value="876"></property>
+    <property name="sname" value="Abcd"></property>
+    <property name="batch" ref="b"></property>
+    <lookup-method name="getBatch"/>
+  </bean>
+  <bean id="b" class="com.example.Batch" scope="prototype">
+     <property name="bid" value="23"></property>
+     <property name="bname" value="Batch-19"></property>
+  </bean>
+</beans>

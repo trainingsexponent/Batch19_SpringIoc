@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	<bean id="l" class="com.singletonExample.Login" scope="singleton">
+      <property name="uname" value="admin"></property>
+      <property name="pass" value="admin"></property>
+	</bean>
+	
+	<bean id="l1" class="com.singletonExample.Login" scope="prototype">
+      <property name="uname" value="admin01"></property>
+      <property name="pass" value="admin@1234"></property>
+	</bean>
+</beans>
