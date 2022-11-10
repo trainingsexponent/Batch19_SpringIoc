@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			  <bean id="s" class="com.byName.Student" autowire="byName">
+			     <property name="sid" value="12"></property>
+			     <property name="sname" value="Qwerty"></property>
+			  </bean>
+			  <bean id="address" class="com.byName.Address">
+			    <property name="aid" value="54"></property>
+			    <property name="city" value="pune"></property>
+			  </bean>
+			  <bean id="address1" class="com.byName.Address">
+			    <property name="aid" value="432"></property>
+			    <property name="city" value="Mumbai"></property>
+			  </bean>
+			</beans>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			<bean id="college1" class="com.byConnstrutor.College">
+			    <constructor-arg value="22"></constructor-arg>
+			    <constructor-arg value="PCCOE"></constructor-arg>
+			  </bean>
+			  <bean id="college" class="com.byConnstrutor.College">
+			    <constructor-arg value="32"></constructor-arg>
+			    <constructor-arg value="COEP"></constructor-arg>
+			  </bean>
+			  <bean id="u" class="com.byConnstrutor.University" autowire="constructor">
+			    <constructor-arg value="1" index="0"></constructor-arg>
+			    <constructor-arg value="SPPU"></constructor-arg>
+			  </bean>
+		
+			</beans>

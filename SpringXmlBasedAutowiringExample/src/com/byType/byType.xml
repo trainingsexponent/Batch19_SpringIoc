@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			    <bean id="e" class="com.byType.Employee" autowire="byType">
+			      <property name="eid" value="1"></property>
+			      <property name="ename" value="Qwerty"></property>
+			      <property name="address" value="Pune"></property>
+			    </bean>
+			    <bean id="d" class="com.byType.Department">
+			      <property name="did" value="123"></property>
+			      <property name="dname" value="IT-Dev"></property>
+			    </bean>
+			     <!-- <bean id="d1" class="com.byType.Department">
+			      <property name="did" value="14567"></property>
+			      <property name="dname" value="IT-Test"></property>
+			    </bean> -->
+			</beans>
