@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+			"https://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+			<beans>
+			  <bean id="c" class="com.College">
+			    <property name="cid" value="123"></property>
+			    <property name="cname" value="COEP"></property>
+			    <property name="departments">
+			    <list>
+			      <bean id="d1" class="com.Department">
+			        <property name="did" value="123"></property>
+			        <property name="dname" value="IT"></property>
+			      </bean>
+			      <ref bean="d2"/>
+			     </list>
+			    </property>
+			    <property name="staffs">
+			      <set>
+			        <bean id="s1" class="com.Staff">
+			          <property name="sid" value="998"></property>
+			          <property name="sname" value="ABCD"></property>
+			        </bean>
+			        <ref bean="s2"/>
+			      </set>
+			    </property>
+			    <property name="map">
+			       <map>
+			         <entry key="1" value-ref="l"></entry>
+			       </map>
+			    </property>
+			  </bean>
+			  
+			  <bean id="l" class="com.Lecture">
+			    <property name="lid" value="11"></property>
+			    <property name="lname" value="DSA"></property>
+			    <property name="lstart" value="10:30AM"></property>
+			    <property name="lend" value="11:30AM"></property>
+			  </bean>
+			  <bean id="s2" class="com.Staff">
+			          <property name="sid" value="999"></property>
+			          <property name="sname" value="PQRS"></property>
+			        </bean>
+			  <bean id="d2" class="com.Department">
+			        <property name="did" value="321"></property>
+			        <property name="dname" value="COMP"></property>
+			      </bean>
+			</beans>
