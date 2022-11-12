@@ -8,6 +8,8 @@ public class Amazon {
 	
 	private int aid;
 	
+	private int additional;
+	
 	private String shopName;
 	
 	private List<String> cloths;
